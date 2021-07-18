@@ -3,6 +3,7 @@ import Showcase from './Showcase/Showcase';
 import Introduction from './Introduction/Introduction';
 import Highlights from './Highlights/Highlights';
 import Experience from './Experience/Experience';
+import About from './About/About';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Introduction />
       <Highlights />
       <Experience />
+      <About />
     </motion.div>
   );
 }

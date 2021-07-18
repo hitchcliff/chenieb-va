@@ -3,13 +3,12 @@ import Heading, { HeadingPattern } from '../../../components/Heading/Heading';
 
 export default function Introduction() {
   return (
-    <Container className="py-24">
-      <Heading heading={HeadingPattern.H2}>Introduction</Heading>
+    <Container className="py-24 flex flex-col md:flex-row">
+      <Heading heading={HeadingPattern.H2}>Objective</Heading>
       <p className="px-10 lg:pl-24">
-        I am seeking a position as a Call Center agent in a reputable organization. Throughout my
-        career and school, I was able to gain a tremendous amount of achievements to augment my lack
-        of experience in this field. My interest is to gain experience to enhance my communication
-        skills and to lend my strength to the company I’m working with.
+        To happily provide the exact needs of my customers as part of my obligation. To do the best
+        of my ability to provide quality service in order to give inspiration to the customer. To
+        pursue customer satisfaction to sustain and contribute to the wellness of the company.
       </p>
     </Container>
   );

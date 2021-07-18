@@ -1,15 +1,14 @@
 import {
   faFacebookF,
-  faInstagram,
-  faSpotify,
+  faLinkedin,
+  faLinkedinIn,
   faTwitter,
-  faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export const data = [
   {
-    icon: faInstagram,
+    icon: faLinkedinIn,
     to: 'https://www.instagram.com/bobbyfishscale/?hl=en',
   },
   {
@@ -21,15 +20,7 @@ export const data = [
     to: 'https://www.facebook.com/fishscalebobby/',
   },
   {
-    icon: faSpotify,
-    to: 'https://open.spotify.com/artist/11gyaEELeFdWVRaxWJm8b0',
-  },
-  {
-    icon: faYoutube,
-    to: 'https://www.youtube.com/channel/UCVBHY0qUggF0MAeiE3EPKDA',
-  },
-  {
     icon: faEnvelope,
-    to: 'mailto:bookings@fishscalefamily.com',
+    to: 'mailto:cheniebontilao30@gmail.com',
   },
 ];
