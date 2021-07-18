@@ -16,7 +16,7 @@ interface NavigationProps {
 
 export default function Navigation({ className }: NavigationProps) {
   return (
-    <Container className="w-full top-0 h-full py-2 text-center z-50">
+    <Container className="w-full top-0 h-full py-2 text-center bg-white shadow-sm z-50">
       <DesktopNavigation />
       <MobileNavigation />
     </Container>

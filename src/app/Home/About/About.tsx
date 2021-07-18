@@ -5,7 +5,7 @@ import Socials from '../../../components/Socials/Socials';
 
 export default function About() {
   return (
-    <Container className="py-24 primary-gradient rounded-t-2xl">
+    <Container className="py-24 bg-gray-50 rounded-t-3xl">
       <div className="flex flex-col md:flex-row">
         <div className="w-full flex">
           <img

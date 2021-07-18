@@ -13,9 +13,9 @@ export default function DesktopNavigation() {
       key={idx}
       onMouseOver={() => setCrntHoveredItem(idx)}
       onMouseOut={() => setCrntHoveredItem(-1)}
-      className="text-white block text-xl uppercase font-bold"
+      className="text-gray-700 hover:text-primary block text-md uppercase font-times"
     >
-      <Link to={item.to} className="px-5 relative">
+      <Link to={item.name} className="px-5 relative">
         {item.name}
         <motion.span
           variants={hover}

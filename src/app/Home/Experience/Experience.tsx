@@ -3,10 +3,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Container } from '../../../components';
 import Heading, { HeadingPattern } from '../../../components/Heading/Heading';
 import { experienceData } from './ExperienceData';
+import styled from 'styled-components';
+
+const ExperienceItem = styled.div`
+  margin-top: 2.5rem;
+
+  @media (min-width: 1024px) {
+    margin-top: 0;
+    :not(:first-child) {
+      margin-top: 2.5rem;
+    }
+  }
+`;
 
 export default function Experience() {
   const experienceItems = experienceData.map(({ title, accomplishments }, idx) => (
-    <div key={idx} className="mt-10">
+    <ExperienceItem key={idx}>
       <Heading heading={HeadingPattern.H5} className="italic underline">
         {title}
       </Heading>
@@ -21,7 +33,7 @@ export default function Experience() {
           </li>
         ))}
       </ul>
-    </div>
+    </ExperienceItem>
   ));
 
   return (
@@ -33,7 +45,7 @@ export default function Experience() {
         >
           work experience
         </Heading>
-        <div className="mt-10">{experienceItems}</div>
+        <div className="mt-16">{experienceItems}</div>
       </div>
     </Container>
   );
