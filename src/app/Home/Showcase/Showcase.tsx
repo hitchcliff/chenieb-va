@@ -1,4 +1,4 @@
-import SHOWCASE_IMG from '../../../assets/images/showcase.jpg';
+import SHOWCASE_IMG from '../../../assets/images/2.jpg';
 import { Button, Container } from '../../../components';
 import Heading, { HeadingPattern } from '../../../components/Heading/Heading';
 
@@ -17,7 +17,6 @@ export default function Showcase() {
         </p>
         <Button className="mt-10">view resume</Button>
       </div>
-      <div className="bg-gray-50 h-2/3 w-full absolute top-0 left-0 -z-10" />
     </Container>
   );
 }
