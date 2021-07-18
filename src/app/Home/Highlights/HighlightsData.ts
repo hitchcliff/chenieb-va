@@ -1,18 +1,16 @@
-import IMG_1 from '../../../assets/images/1.jpg';
-import IMG_2 from '../../../assets/images/2.jpg';
-import IMG_3 from '../../../assets/images/3.jpg';
+import { faBook, faHeadphones, faPlus } from '@fortawesome/free-solid-svg-icons';
 
 export const HighlightsData = [
   {
-    title: 'Virtual Assistant',
-    img: IMG_1,
+    title: 'detail oriented',
+    icon: faBook,
   },
   {
-    title: 'Chat Support',
-    img: IMG_2,
+    title: 'customer service skills',
+    icon: faHeadphones,
   },
   {
-    title: 'Call Center',
-    img: IMG_3,
+    title: 'positive attitude',
+    icon: faPlus,
   },
 ];

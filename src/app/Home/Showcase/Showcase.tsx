@@ -9,7 +9,7 @@ export default function Showcase() {
         <img src={SHOWCASE_IMG} alt="chennie" className="w-full object-cover" />
       </div>
       <div className="px-10 flex flex-col justify-center lg:px-24">
-        <Heading heading={HeadingPattern.H1} className="font-times">
+        <Heading heading={HeadingPattern.H1} className="font-times text-primary">
           Hi! I am Chenie Bontilao
         </Heading>
         <p className="mt-5">

@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 export enum HeadingPattern {
   H1 = 'h1',
   H2 = 'h2',
+  H3 = 'h3',
+  H4 = 'h4',
 }
 
 interface HeadingProps {
@@ -22,10 +24,19 @@ export default function Heading({ children, heading, className }: HeadingProps) 
 
       {heading === HeadingPattern.H2 && (
         <div>
-          <motion.h2 className="uppercase text-md italic text-primary font-bokka lg:text-3xl font-bold">
+          <motion.h2 className="uppercase text-md italic font-bokka lg:text-3xl font-bold">
             {children}
           </motion.h2>
           <div className="w-1/2 primary-gradient h-2 rounded-full mt-5" />
+        </div>
+      )}
+
+      {heading === HeadingPattern.H4 && (
+        <div className="text-center">
+          <motion.h4 className="uppercase text-md text-white font-bokka lg:text-xl font-bold">
+            {children}
+          </motion.h4>
+          <div className="w-1/4 mx-auto bg-white h-2 rounded-full mt-2" />
         </div>
       )}
     </div>
