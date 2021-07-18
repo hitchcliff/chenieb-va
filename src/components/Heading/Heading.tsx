@@ -8,16 +8,14 @@ export enum HeadingPattern {
 interface HeadingProps {
   children: any;
   heading?: HeadingPattern;
+  className?: string;
 }
 
-export default function Heading({ children, heading }: HeadingProps) {
+export default function Heading({ children, heading, className }: HeadingProps) {
   return (
-    <div>
+    <div className={className}>
       {heading === HeadingPattern.H1 && (
-        <motion.h1
-          className="uppercase text-xl md:text-3xl lg:text-5xl font-bold font-bokka"
-          style={{ color: '#f0ba96' }}
-        >
+        <motion.h1 className="uppercase text-xl md:text-3xl lg:text-5xl font-bold font-bokka">
           {children}
         </motion.h1>
       )}

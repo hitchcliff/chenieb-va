@@ -20,3 +20,7 @@ html {
 .touch-none {
   touch-action: none;
 }
+
+.primary-gradient {
+  @apply bg-gradient-to-r via-primary from-tertiary to-secondary;
+}
