@@ -70,7 +70,7 @@ export default function Burger({ setIsBurgerActive, isBurgerActive }: BurgerProp
   return (
     <button
       onClick={handleClick}
-      className="relative flex flex-col justify-center items-center outline-none primary-gradient rounded-full shadow-md h-10 w-10 mg:h-16 md:w-16 focus:outline-none"
+      className="relative flex flex-col justify-center items-center outline-none primary-gradient rounded-full shadow-md h-10 w-10 md:h-16 md:w-16 focus:outline-none"
     >
       <Line
         animate={isBurgerActive ? 'active' : 'inactive'}
