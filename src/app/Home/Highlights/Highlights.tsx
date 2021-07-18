@@ -13,13 +13,11 @@ const HighlightItem = styled.div`
 export default function Highlights() {
   const highlightItems = HighlightsData.map(({ icon, title }, idx) => (
     <HighlightItem key={idx} className="flex justify-center items-center flex-col">
-      <div className="overflow-hidden h-24 w-24 rounded-full bg-white shadow-lg text-primary flex justify-center items-center text-5xl hover:text-gray-700 transition-all duration-700">
+      <div className="overflow-hidden h-16 w-16 rounded-full bg-white shadow-lg text-primary flex justify-center items-center text-2xl hover:text-gray-700 transition-all duration-700">
         <FontAwesomeIcon icon={icon} />
       </div>
       <div>
-        <Heading heading={HeadingPattern.H4} className="mt-5">
-          {title}
-        </Heading>
+        <h4 className="mt-2 capitalize">{title}</h4>
       </div>
     </HighlightItem>
   ));

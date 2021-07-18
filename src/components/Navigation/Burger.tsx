@@ -1,6 +1,8 @@
 import { motion, Variants } from 'framer-motion';
 import { Dispatch, SetStateAction } from 'react';
 import styled from 'styled-components';
+import { primaryColor } from '../../constants';
+import { TransitionPowerThree } from '../FramerMotion/Transitions';
 
 const variant3: Variants = {
   active: {
@@ -19,12 +21,14 @@ const variant2: Variants = {
     opacity: 0,
     transition: {
       delay: 0.3,
+      ...TransitionPowerThree,
     },
   },
   inactive: {
     opacity: 100,
     transition: {
       delay: 0.6,
+      ...TransitionPowerThree,
     },
   },
 };
@@ -46,11 +50,6 @@ const Line = styled(motion.div)`
   height: 0.2rem;
   border-radius: 5px;
   background: white;
-
-  @media (min-width: 768px) {
-    width: 2.5rem;
-    height: 0.3rem;
-  }
 `;
 
 interface BurgerProps {
@@ -66,7 +65,7 @@ export default function Burger({ setIsBurgerActive, isBurgerActive }: BurgerProp
   return (
     <button
       onClick={handleClick}
-      className="relative flex flex-col justify-center items-center outline-none focus:outline-none"
+      className="relative flex flex-col justify-center items-center outline-none primary-gradient rounded-full shadow-md h-16 w-16 focus:outline-none"
     >
       <Line
         animate={isBurgerActive ? 'active' : 'inactive'}

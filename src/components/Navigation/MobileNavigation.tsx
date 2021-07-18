@@ -9,7 +9,7 @@ const variant = {
   hidden: {
     opacity: 0,
     transition: {
-      duration: 0.5,
+      duration: 1.5,
     },
   },
   visible: {
@@ -27,15 +27,15 @@ export default function MobileNavigation() {
     <li
       key={idx}
       onClick={() => setIsBurgerActive(false)}
-      className={`text-white block text-xl uppercase font-bold ${!item.img && 'py-2'}`}
+      className={`text-white block text-xl md:text-3xl uppercase font-bold ${!item.img && 'py-2'}`}
     >
-      <Link to={item.to}>{item.name}</Link>
+      <Link to={item.name}>{item.name}</Link>
     </li>
   ));
 
   return (
-    <div className="flex items-center fixed right-5 px-0 w-full md:w-auto md:hidden z-50">
-      <div className="ml-auto" style={{ zIndex: 1231231231 }}>
+    <div className="flex items-center px-0 w-full z-50">
+      <div className="mr-auto" style={{ zIndex: 1231231231 }}>
         <Burger setIsBurgerActive={setIsBurgerActive} isBurgerActive={isBurgerActive} />
       </div>
       <motion.div

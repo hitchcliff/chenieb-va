@@ -26,7 +26,7 @@ export default function About() {
             My interest is to gain experience to enhance my communication skills and to lend my
             strength to the company I’m working with.
           </p>
-          <a href="!#" className="mt-10 font-bokka uppercase underline font-bold">
+          <a href="!#" className="mt-10 font-times uppercase underline font-bold">
             view resume
           </a>
           <Socials className="py-3 mt-5" />
