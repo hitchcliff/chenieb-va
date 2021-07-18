@@ -36,6 +36,7 @@ module.exports = {
         0: '0',
       },
       fontFamily: {
+        times: ['Times New Roman', ...defaultTheme.fontFamily.sans],
         roboto: ['Roboto', ...defaultTheme.fontFamily.sans],
         bokka: ['Bokka', ...defaultTheme.fontFamily.sans],
       },

@@ -9,7 +9,7 @@ export default function Showcase() {
         <img src={SHOWCASE_IMG} alt="chennie" className="w-full object-cover" />
       </div>
       <div className="px-10 flex flex-col justify-center lg:px-24">
-        <Heading heading={HeadingPattern.H1} className="">
+        <Heading heading={HeadingPattern.H1} className="font-times">
           Hi! I am Chenie Bontilao
         </Heading>
         <p className="mt-5">
@@ -17,7 +17,7 @@ export default function Showcase() {
         </p>
         <Button className="mt-10">view resume</Button>
       </div>
-      <div className="bg-gray-100 h-2/3 w-full absolute top-0 left-0 -z-10" />
+      <div className="bg-gray-50 h-2/3 w-full absolute top-0 left-0 -z-10" />
     </Container>
   );
 }
