@@ -6,9 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const HighlightItem = styled.div`
   @media (min-width: 768px) {
-    :not(:last-child) {
-      margin-right: 2.5rem;
-    }
+    padding: 0 3.5rem;
   }
 `;
 
@@ -26,7 +24,7 @@ export default function Highlights() {
     </HighlightItem>
   ));
   return (
-    <Container className="py-24 primary-gradient">
+    <Container className="py-24 primary-gradient rounded-t-full">
       <div className="mx-auto">
         <div className="flex flex-col mt-16 md:flex-row">{highlightItems}</div>
       </div>
