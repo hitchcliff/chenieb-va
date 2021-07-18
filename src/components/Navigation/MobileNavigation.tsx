@@ -1,19 +1,19 @@
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { useState } from 'react';
 import { TransitionPowerThree } from '../FramerMotion/Transitions';
 import Burger from './Burger';
 import { menuItems } from './data';
 import { Link as ScrollLink } from 'react-scroll';
 
-const variant = {
+const variant: Variants = {
   hidden: {
     opacity: 0,
-    transition: {
-      duration: 1.5,
-    },
+    borderRadius: '100%',
+    transition: { ...TransitionPowerThree, duration: 1.2 },
   },
   visible: {
     opacity: 1,
+    borderRadius: '0%',
     top: '0',
     zIndex: 123123,
     transition: { ...TransitionPowerThree, duration: 1.2 },
@@ -43,7 +43,7 @@ export default function MobileNavigation() {
       <motion.div
         variants={variant}
         animate={isBurgerActive ? 'visible' : 'hidden'}
-        className="flex flex-col justify-center items-center fixed left-0 top-full text-white bg-gray-600 bg-opacity-90 w-full min-h-screen opacity-0"
+        className="flex flex-col justify-center items-center fixed left-0 top-full text-white primary-gradient bg-opacity-90 w-full min-h-screen mx-auto opacity-0"
       >
         <ul className="flex flex-col -mt-12">{renderMenuItems}</ul>
       </motion.div>
