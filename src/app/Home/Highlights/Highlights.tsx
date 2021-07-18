@@ -24,7 +24,7 @@ export default function Highlights() {
     </HighlightItem>
   ));
   return (
-    <Container className="py-24 mb-24 mt-12 primary-gradient rounded-tl-full ml-auto w-3/4">
+    <Container className="py-24 primary-gradient rounded-tl-full ml-auto w-3/4">
       <div className="mx-auto">
         <div className="flex flex-col mt-16 md:flex-row">{highlightItems}</div>
       </div>

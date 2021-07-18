@@ -21,7 +21,7 @@ export default function Socials({ className }: SocialsProps) {
   const socialItems = data.map((item, idx) => (
     <li
       key={idx}
-      className="mx-2 bg-white w-10 h-10 rounded-full text-center flex justify-center items-center border-2 shadow-md hover:opacity-80 hover:border-white hover:bg-black hover:text-white transition-all cursor-pointer"
+      className="mx-2 bg-white w-8 h-8 rounded-full text-center flex justify-center items-center border-2 border-white shadow-md hover:border-primary hover:bg-black hover:text-white transition-all cursor-pointer"
     >
       <a href={item.to} rel="noreferrer" target="_blank">
         <FontAwesomeIcon icon={item.icon} />
@@ -31,7 +31,7 @@ export default function Socials({ className }: SocialsProps) {
 
   return (
     <motion.section id="socials" className={className}>
-      <ul className="flex flex-row items-center text-2xl ">{socialItems}</ul>
+      <ul className="flex flex-row items-center text-md">{socialItems}</ul>
     </motion.section>
   );
 }
