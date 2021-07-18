@@ -13,7 +13,8 @@ export default function Showcase() {
           Hi! I am Chenie Bontilao
         </Heading>
         <p className="mt-5">
-          I am seeking a position as a Virtual Assistant in a reputable organization.
+          I am seeking a position as a Virtual Assistant, Chat Support, and Call Center in a
+          reputable organization.
         </p>
         <Button className="mt-10">view resume</Button>
       </div>
