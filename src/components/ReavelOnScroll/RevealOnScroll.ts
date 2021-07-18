@@ -3,10 +3,17 @@ import ScrollReveal from 'scrollreveal';
 export default function RevealOnScroll() {
   const sr = ScrollReveal();
 
+  sr.reveal('.scale-up', {
+    scale: 0.8,
+    opacity: 0.2,
+    viewFactor: 0.2,
+    reset: true,
+  });
+
   sr.reveal('.from-left', {
     duration: 800,
     origin: 'left',
-    distance: '70px',
+    distance: '30px',
     opacity: 0.2,
     viewFactor: 0.2,
     reset: true,
@@ -15,7 +22,7 @@ export default function RevealOnScroll() {
   sr.reveal('.from-right', {
     duration: 800,
     origin: 'right',
-    distance: '70px',
+    distance: '30px',
     opacity: 0.2,
     viewFactor: 0.2,
     reset: true,
@@ -34,7 +41,7 @@ export default function RevealOnScroll() {
     duration: 800,
     scale: 1,
     origin: 'bottom',
-    distance: '70px',
+    distance: '30px',
     viewFactor: 0,
     reset: true,
   });
@@ -52,7 +59,7 @@ export default function RevealOnScroll() {
     duration: 800,
     scale: 1,
     origin: 'top',
-    distance: '70px',
+    distance: '30px',
     viewFactor: 0.2,
     reset: true,
   });

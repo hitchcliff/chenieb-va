@@ -19,12 +19,12 @@ const ExperienceItem = styled.div`
 export default function Experience() {
   const experienceItems = experienceData.map(({ title, accomplishments }, idx) => (
     <ExperienceItem key={idx}>
-      <Heading heading={HeadingPattern.H5} className="italic underline">
+      <Heading heading={HeadingPattern.H5} className="italic underline from-right">
         {title}
       </Heading>
       <ul className="mt-5">
         {accomplishments.map((item, i) => (
-          <li key={i} className="mt-2 ml-10 lg:ml-16 relative">
+          <li key={i} className="mt-2 ml-10 lg:ml-16 relative from-left">
             <FontAwesomeIcon
               icon={faLocationArrow}
               className="mr-2 absolute top-2 -left-5 text-xs"
@@ -41,7 +41,7 @@ export default function Experience() {
       <div className="w-full">
         <Heading
           heading={HeadingPattern.H2}
-          className="text-center flex justify-center items-center w-full"
+          className="text-center flex justify-center items-center w-full from-right"
         >
           work experience
         </Heading>

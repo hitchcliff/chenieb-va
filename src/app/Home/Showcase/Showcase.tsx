@@ -8,7 +8,7 @@ export default function Showcase() {
       id="home"
       className="min-h-screen relative flex flex-col justify-center items-center md:flex-row bg-white"
     >
-      <div className="w-full md:w-1/2 flex">
+      <div className="w-full md:w-1/2 flex scale-up">
         <img
           src={SHOWCASE_IMG}
           alt="chennie"
@@ -16,14 +16,14 @@ export default function Showcase() {
         />
       </div>
       <div className="px-10 flex flex-col justify-center lg:px-24">
-        <Heading heading={HeadingPattern.H1} className="font-times mt-10 md:mt-0">
+        <Heading heading={HeadingPattern.H1} className="font-times mt-10 md:mt-0 from-left">
           Hi! I am Chenie Bontilao
         </Heading>
-        <p className="mt-5">
+        <p className="mt-5 from-bottom">
           I am seeking a position as a Virtual Assistant, Chat Support, and Call Center in a
           reputable organization.
         </p>
-        <Button className="mt-10">view resume</Button>
+        <Button className="mt-10 from-left">view resume</Button>
       </div>
       <Bubbles />
     </Container>
