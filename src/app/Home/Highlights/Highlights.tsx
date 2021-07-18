@@ -13,7 +13,7 @@ const HighlightItem = styled.div`
 export default function Highlights() {
   const highlightItems = HighlightsData.map(({ icon, title }, idx) => (
     <HighlightItem key={idx} className="flex items-center flex-col">
-      <div className="overflow-hidden h-12 w-12 md:h-16 md:w-16 rounded-full bg-white shadow-lg text-primary flex justify-center items-center text-2xl hover:text-gray-700 transition-all duration-700">
+      <div className="overflow-hidden h-16 w-16 rounded-full bg-white shadow-lg text-primary flex justify-center items-center text-2xl hover:text-gray-700 transition-all duration-700">
         <FontAwesomeIcon icon={icon} />
       </div>
       <div className="text-center px-5">
