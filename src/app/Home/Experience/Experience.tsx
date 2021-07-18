@@ -13,7 +13,10 @@ export default function Experience() {
       <ul className="mt-5">
         {accomplishments.map((item, i) => (
           <li key={i} className="mt-2 ml-10 lg:ml-16 relative">
-            <FontAwesomeIcon icon={faLocationArrow} className="mr-2 absolute -left-5" />
+            <FontAwesomeIcon
+              icon={faLocationArrow}
+              className="mr-2 absolute top-2 -left-5 text-xs"
+            />
             {item}
           </li>
         ))}
