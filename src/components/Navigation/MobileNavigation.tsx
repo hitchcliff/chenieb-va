@@ -29,7 +29,9 @@ export default function MobileNavigation() {
       onClick={() => setIsBurgerActive(false)}
       className="text-white block text-xl md:text-3xl uppercase font-bold"
     >
-      <ScrollLink to={item.name}>{item.name}</ScrollLink>
+      <ScrollLink to={item.name} smooth duration={1000} onClick={() => setIsBurgerActive(false)}>
+        {item.name}
+      </ScrollLink>
     </li>
   ));
 
