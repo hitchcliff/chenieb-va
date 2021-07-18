@@ -13,7 +13,11 @@ const variant: Variants = {
   },
 };
 
-export default function Socials() {
+interface SocialsProps {
+  className?: string;
+}
+
+export default function Socials({ className }: SocialsProps) {
   const socialItems = data.map((item, idx) => (
     <li
       key={idx}
@@ -26,7 +30,7 @@ export default function Socials() {
   ));
 
   return (
-    <motion.section id="socials" className="py-3 mt-5">
+    <motion.section id="socials" className={className}>
       <ul className="flex flex-row items-center text-2xl ">{socialItems}</ul>
     </motion.section>
   );

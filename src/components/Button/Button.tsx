@@ -16,7 +16,7 @@ interface ButtonProps {
 export default function Button({ children, className }: ButtonProps) {
   return (
     <div className={className}>
-      <Container className="px-10 py-4 uppercase rounded-md transition-all text-white text-sm font-bokka bg-gradient-to-r from-primary to-secondary hover:bg-primary">
+      <Container className="px-10 py-4 uppercase rounded-md transition-all text-white text-sm font-times tracking-widest bg-gradient-to-r from-primary to-secondary hover:bg-primary">
         {children}
       </Container>
     </div>

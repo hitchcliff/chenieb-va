@@ -25,7 +25,7 @@ export default function Heading({ children, heading, className }: HeadingProps) 
 
       {heading === HeadingPattern.H2 && (
         <div>
-          <motion.h2 className="uppercase text-md italic font-bokka lg:text-3xl font-bold">
+          <motion.h2 className="uppercase text-md italic font-times lg:text-3xl font-bold">
             {children}
           </motion.h2>
           <div className="w-1/2 primary-gradient h-2 rounded-full mt-5" />
@@ -34,7 +34,7 @@ export default function Heading({ children, heading, className }: HeadingProps) 
 
       {heading === HeadingPattern.H4 && (
         <div className="text-center">
-          <motion.h4 className="uppercase text-md text-white font-bokka lg:text-xl font-bold">
+          <motion.h4 className="uppercase text-md text-white font-times lg:text-xl font-bold">
             {children}
           </motion.h4>
           <div className="w-1/4 mx-auto bg-white h-2 rounded-full mt-2" />
@@ -43,7 +43,7 @@ export default function Heading({ children, heading, className }: HeadingProps) 
 
       {heading === HeadingPattern.H5 && (
         <div>
-          <motion.h4 className="uppercase text-md font-bokka lg:text-xl font-bold">
+          <motion.h4 className="uppercase text-md font-times lg:text-xl font-bold">
             {children}
           </motion.h4>
         </div>
