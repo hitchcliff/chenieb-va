@@ -14,7 +14,10 @@ export default function Heading({ children, heading }: HeadingProps) {
   return (
     <div>
       {heading === HeadingPattern.H1 && (
-        <motion.h1 className="uppercase text-xl md:text-3xl lg:text-5xl font-bold font-bokka">
+        <motion.h1
+          className="uppercase text-xl md:text-3xl lg:text-5xl font-bold font-bokka"
+          style={{ color: '#f0ba96' }}
+        >
           {children}
         </motion.h1>
       )}

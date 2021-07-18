@@ -20,8 +20,9 @@ module.exports = {
         '3xl': '1680px',
       },
       colors: {
-        primary: '#C78E07',
-        secondary: '#0C257C',
+        primary: '#f0ba96',
+        secondary: '#f5ceb1',
+        tertiary: '#fdfcdd',
       },
       stroke: {
         white: '#ffffff',
