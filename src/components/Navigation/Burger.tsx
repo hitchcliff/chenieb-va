@@ -1,7 +1,6 @@
 import { motion, Variants } from 'framer-motion';
 import { Dispatch, SetStateAction } from 'react';
 import styled from 'styled-components';
-import { primaryColor } from '../../constants';
 import { TransitionPowerThree } from '../FramerMotion/Transitions';
 
 const variant3: Variants = {
