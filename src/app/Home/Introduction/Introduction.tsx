@@ -4,7 +4,7 @@ import Heading, { HeadingPattern } from '../../../components/Heading/Heading';
 export default function Introduction() {
   return (
     <Container className="py-24">
-      <Heading heading={HeadingPattern.H2} className="text-primary">
+      <Heading heading={HeadingPattern.H2} className="">
         Introduction
       </Heading>
       <p className="px-10 lg:pl-24">
