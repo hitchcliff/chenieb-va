@@ -1,10 +1,10 @@
 import SHOWCASE_IMG from '../../../assets/images/2.jpg';
-import { Button, Container } from '../../../components';
+import { Bubbles, Button, Container } from '../../../components';
 import Heading, { HeadingPattern } from '../../../components/Heading/Heading';
 
 export default function Showcase() {
   return (
-    <Container className="min-h-screen flex flex-col justify-center items-center md:flex-row bg-white">
+    <Container className="min-h-screen relative flex flex-col justify-center items-center md:flex-row bg-white">
       <div className="w-1/2 flex">
         <img
           src={SHOWCASE_IMG}
@@ -22,6 +22,7 @@ export default function Showcase() {
         </p>
         <Button className="mt-10">view resume</Button>
       </div>
+      <Bubbles />
     </Container>
   );
 }

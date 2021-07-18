@@ -6,7 +6,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  @apply bg-white;
+  @apply bg-gray-100;
 }
 
 /* Handle */
