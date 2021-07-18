@@ -1,9 +1,8 @@
-import DesktopNavigation from './DesktopNavigation';
 import MobileNavigation from './MobileNavigation';
 import styled from 'styled-components';
 
 const Container = styled.nav`
-  padding: 1.5rem;
+  padding: 0.8rem;
   display: flex;
   justify-content: center;
   align-items: center;

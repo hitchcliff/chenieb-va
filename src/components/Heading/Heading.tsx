@@ -28,7 +28,7 @@ export default function Heading({ children, heading, className }: HeadingProps) 
           <motion.h2 className="uppercase text-2xl italic font-times lg:text-3xl font-bold">
             {children}
           </motion.h2>
-          <div className="w-1/2 primary-gradient h-2 rounded-full mt-5" />
+          <div className="w-1/2 mx-auto md:mx-0 primary-gradient h-2 rounded-full mt-5" />
         </div>
       )}
 

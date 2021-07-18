@@ -14,7 +14,7 @@ export default function About() {
             className="w-full flex my-auto object-cover h-auto border-8 border-white shadow-xl"
           />
         </div>
-        <div className="px-5 w-full flex flex-col justify-center lg:pl-24 lg:pr-0">
+        <div className="w-full flex flex-col justify-center md:px-5  lg:pl-24 lg:pr-0">
           <Heading
             heading={HeadingPattern.H5}
             className="font-times text-black text-left mt-10 md:mt-0 from-top"

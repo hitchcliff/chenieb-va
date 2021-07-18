@@ -46,10 +46,15 @@ const variant1: Variants = {
 
 const Line = styled(motion.div)`
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
-  width: 1.5rem;
-  height: 0.2rem;
+  width: 1rem;
+  height: 0.1rem;
   border-radius: 5px;
   background: white;
+
+  @media (min-width: 768px) {
+    width: 1.5rem;
+    height: 0.2rem;
+  }
 `;
 
 interface BurgerProps {
@@ -65,7 +70,7 @@ export default function Burger({ setIsBurgerActive, isBurgerActive }: BurgerProp
   return (
     <button
       onClick={handleClick}
-      className="relative flex flex-col justify-center items-center outline-none primary-gradient rounded-full shadow-md h-16 w-16 focus:outline-none"
+      className="relative flex flex-col justify-center items-center outline-none primary-gradient rounded-full shadow-md h-10 w-10 mg:h-16 md:w-16 focus:outline-none"
     >
       <Line
         animate={isBurgerActive ? 'active' : 'inactive'}

@@ -15,7 +15,7 @@ export default function Showcase() {
           className="w-full flex my-auto object-cover h-auto border-8 border-white shadow-xl"
         />
       </div>
-      <div className="px-10 flex flex-col justify-center lg:px-24">
+      <div className="px-0 flex flex-col justify-center md:px-10 lg:px-24">
         <Heading heading={HeadingPattern.H1} className="font-times mt-10 md:mt-0 from-left">
           Hi! I am Chenie Bontilao
         </Heading>

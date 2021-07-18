@@ -12,7 +12,7 @@ const HighlightItem = styled.div`
 
 export default function Highlights() {
   const highlightItems = HighlightsData.map(({ icon, title }, idx) => (
-    <HighlightItem key={idx} className="flex items-center flex-col">
+    <HighlightItem key={idx} className="flex items-center flex-col mt-5 md:mt-0">
       <div className="overflow-hidden h-16 w-16 rounded-full bg-white shadow-lg text-primary flex justify-center items-center text-2xl hover:text-gray-700 transition-all duration-700 scale-up">
         <FontAwesomeIcon icon={icon} />
       </div>
@@ -27,7 +27,7 @@ export default function Highlights() {
       className="py-24 primary-gradient rounded-tl-full ml-auto w-full md:w-3/4 from-right"
     >
       <div className="mx-auto">
-        <div className="flex mt-16 flex-row">{highlightItems}</div>
+        <div className="flex mt-16 flex-col md:flex-row">{highlightItems}</div>
       </div>
     </Container>
   );
