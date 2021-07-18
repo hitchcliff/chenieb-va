@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Bokka';
+    src: url('Bokka-Solid.eot');
+    src: url('Bokka-Solid.eot?#iefix') format('embedded-opentype'),
+        url('Bokka-Solid.woff2') format('woff2'),
+        url('Bokka-Solid.woff') format('woff'),
+        url('Bokka-Solid.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

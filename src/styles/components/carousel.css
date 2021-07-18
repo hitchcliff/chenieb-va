@@ -1,0 +1,15 @@
+/*! purgecss start ignore */
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide > div {
+  width: 100%;
+}
+
+.carousel.carousel-slider,
+.carousel .slider-wrapper {
+  overflow: visible !important;
+}
+/*! purgecss end ignore */

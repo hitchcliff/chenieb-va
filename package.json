@@ -1,0 +1,101 @@
+{
+  "name": "chennieb-va",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@reduxjs/toolkit": "^1.6.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^13.1.5",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^14.14.41",
+    "@types/react": "^17.0.4",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-slick": "^0.23.4",
+    "axios": "^0.21.1",
+    "fontfaceobserver": "^2.1.0",
+    "formik": "^2.2.6",
+    "framer-motion": "^4.1.9",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.4",
+    "react-responsive-carousel": "^3.2.18",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-scroll": "^1.8.2",
+    "react-slick": "^0.28.1",
+    "redux-thunk": "^2.3.0",
+    "scrollreveal": "^4.0.9",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.2.1",
+    "sweetalert2": "^10.16.6",
+    "typescript": "^4.2.3",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "npm-run-all -p watch:css start:react",
+    "build": "npm-run-all build:css build:react",
+    "start:react": "react-scripts start",
+    "build:react": "react-scripts build",
+    "test": "react-scripts test --verbose",
+    "eject": "react-scripts eject",
+    "lint:ts": "tslint 'src/**/*.{ts,tsx,js}'",
+    "build:css": "postcss src/styles/tailwind.css -o src/styles/main.css --env production",
+    "watch:css": "postcss src/styles/tailwind.css -o src/styles/main.css --env development --watch"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "options": {
+    "scripts": [
+      "./node_modules/parallax-js/dist/parallax.min.js"
+    ]
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "@types/fontfaceobserver": "^0.0.6",
+    "@types/react-redux": "^7.1.17",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/react-scroll": "^1.8.2",
+    "@types/scrollreveal": "^0.0.6",
+    "@types/styled-components": "^5.1.9",
+    "@types/three": "^0.129.1",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "autoprefixer": "^10.2.5",
+    "eslint": "^7.25.0",
+    "imports-loader": "^2.0.0",
+    "nodemon": "^2.0.7",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.13",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.1",
+    "postcss-nested": "^5.0.5",
+    "prettier": "^2.2.1",
+    "tailwindcss": "2.0.3",
+    "tslib": "^2.3.0",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.3.0",
+    "tslint-react": "^5.0.0"
+  }
+}

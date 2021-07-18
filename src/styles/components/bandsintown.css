@@ -1,0 +1,10 @@
+/*! purgecss start ignore */
+.bit-widget-container {
+  @apply w-full;
+}
+
+.bit-widget-container {
+  @apply m-auto;
+}
+
+/*! purgecss end ignore */

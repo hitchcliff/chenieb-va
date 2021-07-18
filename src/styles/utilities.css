@@ -1,0 +1,22 @@
+html {
+  width: 100%;
+  @apply overflow-x-hidden;
+}
+
+/* purgecss start ignore */
+#root {
+  min-height: 100vh;
+}
+
+.position-center {
+  @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+}
+
+.noselect {
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.touch-none {
+  touch-action: none;
+}

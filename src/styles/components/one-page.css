@@ -1,0 +1,29 @@
+#main {
+  height: 90vh;
+}
+
+#logo-section {
+  height: 20vh;
+}
+
+#video-section iframe {
+  height: 200px;
+  width: 100%;
+}
+
+#social-section {
+  height: 10vh;
+}
+
+@media (min-width: 480px) {
+  #video-section iframe {
+    width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  #video-section iframe {
+    height: 330px;
+    width: 600px;
+  }
+}
