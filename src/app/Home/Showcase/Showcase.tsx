@@ -4,8 +4,11 @@ import Heading, { HeadingPattern } from '../../../components/Heading/Heading';
 
 export default function Showcase() {
   return (
-    <Container className="min-h-screen relative flex flex-col justify-center items-center md:flex-row bg-white">
-      <div className="w-1/2 flex">
+    <Container
+      id="home"
+      className="min-h-screen relative flex flex-col justify-center items-center md:flex-row bg-white"
+    >
+      <div className="w-full md:w-1/2 flex">
         <img
           src={SHOWCASE_IMG}
           alt="chennie"
@@ -13,7 +16,7 @@ export default function Showcase() {
         />
       </div>
       <div className="px-10 flex flex-col justify-center lg:px-24">
-        <Heading heading={HeadingPattern.H1} className="font-times text-primary">
+        <Heading heading={HeadingPattern.H1} className="font-times mt-10 md:mt-0">
           Hi! I am Chenie Bontilao
         </Heading>
         <p className="mt-5">

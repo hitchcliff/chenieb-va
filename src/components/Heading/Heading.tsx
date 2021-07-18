@@ -25,7 +25,7 @@ export default function Heading({ children, heading, className }: HeadingProps) 
 
       {heading === HeadingPattern.H2 && (
         <div>
-          <motion.h2 className="uppercase text-md italic font-times lg:text-3xl font-bold">
+          <motion.h2 className="uppercase text-2xl italic font-times lg:text-3xl font-bold">
             {children}
           </motion.h2>
           <div className="w-1/2 primary-gradient h-2 rounded-full mt-5" />

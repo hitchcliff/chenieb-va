@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { TransitionPowerThree } from '../FramerMotion/Transitions';
 import Burger from './Burger';
 import { menuItems } from './data';
+import { Link as ScrollLink } from 'react-scroll';
 
 const variant = {
   hidden: {
@@ -27,9 +27,9 @@ export default function MobileNavigation() {
     <li
       key={idx}
       onClick={() => setIsBurgerActive(false)}
-      className={`text-white block text-xl md:text-3xl uppercase font-bold ${!item.img && 'py-2'}`}
+      className="text-white block text-xl md:text-3xl uppercase font-bold"
     >
-      <Link to={item.name}>{item.name}</Link>
+      <ScrollLink to={item.name}>{item.name}</ScrollLink>
     </li>
   ));
 

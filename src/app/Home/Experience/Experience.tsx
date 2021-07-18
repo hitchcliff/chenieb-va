@@ -37,7 +37,7 @@ export default function Experience() {
   ));
 
   return (
-    <Container className="py-24">
+    <Container id="experience" className="py-24">
       <div className="w-full">
         <Heading
           heading={HeadingPattern.H2}
