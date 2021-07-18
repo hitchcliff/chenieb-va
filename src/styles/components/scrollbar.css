@@ -1,20 +1,20 @@
 /* width */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 10px;
   border-radius: 100%;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  @apply bg-tertiary;
+  @apply bg-white;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  @apply bg-primary;
+  @apply bg-primary rounded-full;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  @apply hover:bg-secondary;
+  /* @apply hover:bg-tertiary; */
 }

@@ -21,7 +21,12 @@ export default function Heading({ children, heading, className }: HeadingProps) 
       )}
 
       {heading === HeadingPattern.H2 && (
-        <motion.h2 className="uppercase text-xl font-bold">{children}</motion.h2>
+        <div>
+          <motion.h2 className="uppercase text-md italic font-bokka lg:text-3xl font-bold">
+            {children}
+          </motion.h2>
+          <div className="w-1/2 bg-primary h-2 rounded-full mt-5" />
+        </div>
       )}
     </div>
   );
