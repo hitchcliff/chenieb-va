@@ -1,6 +1,6 @@
 export const experienceData = [
   {
-    title: 'Service Crew in Tita Funnies',
+    title: 'Service Crew in Tita Fannies',
     accomplishments: [
       `As a service crew my duty is  to serve our customers in a very nice way, like always saying “Good morning”, “Good afternoon”, “Thank you for coming”.`,
       `We always make sure that the food we serve is clean. Moreover, we maintained fresh, and the right amount of food we serve, because we value customers.`,

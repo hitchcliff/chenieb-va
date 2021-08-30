@@ -2,6 +2,7 @@ import SHOWCASE_IMG from '../../../assets/images/1.jpg';
 import { Button, Container } from '../../../components';
 import Heading, { HeadingPattern } from '../../../components/Heading/Heading';
 import Socials from '../../../components/Socials/Socials';
+import { resumeLink } from '../../../constants';
 
 export default function About() {
   return (
@@ -29,7 +30,10 @@ export default function About() {
             My interest is to gain experience to enhance my communication skills and to lend my
             strength to the company I’m working with.
           </p>
-          <a href="!#" className="mt-10 font-times uppercase underline font-bold from-right">
+          <a
+            href={resumeLink}
+            className="mt-10 font-times uppercase underline font-bold from-right"
+          >
             view resume
           </a>
           <Socials className="py-3 mt-5 from-bottom" />

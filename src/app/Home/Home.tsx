@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <motion.div>
       <Showcase />
-      <Highlights />
+      {/* <Highlights /> */}
       <Introduction />
       <About />
       <Experience />

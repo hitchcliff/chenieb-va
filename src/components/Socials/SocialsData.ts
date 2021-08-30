@@ -9,15 +9,15 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 export const data = [
   {
     icon: faLinkedinIn,
-    to: 'https://www.instagram.com/bobbyfishscale/?hl=en',
+    to: 'https://www.linkedin.com/in/chenie-bontilao-09976b217/',
   },
   {
     icon: faTwitter,
-    to: 'https://twitter.com/bobbyfishscale',
+    to: 'https://twitter.com/ChenieNarra',
   },
   {
     icon: faFacebookF,
-    to: 'https://www.facebook.com/fishscalebobby/',
+    to: 'https://www.facebook.com/queeniebontilao.bontilao',
   },
   {
     icon: faEnvelope,

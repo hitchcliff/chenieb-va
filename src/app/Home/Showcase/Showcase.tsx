@@ -1,6 +1,7 @@
 import SHOWCASE_IMG from '../../../assets/images/2.jpg';
 import { Bubbles, Button, Container } from '../../../components';
 import Heading, { HeadingPattern } from '../../../components/Heading/Heading';
+import { resumeLink } from '../../../constants';
 
 export default function Showcase() {
   return (
@@ -23,7 +24,9 @@ export default function Showcase() {
           I am seeking a position as a Virtual Assistant, Chat Support, and Call Center in a
           reputable organization.
         </p>
-        <Button className="mt-10 from-left">view resume</Button>
+        <a href={resumeLink} target="_blank" rel="noreferrer">
+          <Button className="mt-10 from-left">view resume</Button>
+        </a>
       </div>
       <Bubbles />
     </Container>
