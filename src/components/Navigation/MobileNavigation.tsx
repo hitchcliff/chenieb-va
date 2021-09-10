@@ -4,6 +4,7 @@ import { TransitionPowerThree } from '../FramerMotion/Transitions';
 import Burger from './Burger';
 import { menuItems } from './data';
 import { Link as ScrollLink } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 const variant: Variants = {
   hidden: {
@@ -29,9 +30,9 @@ export default function MobileNavigation() {
       onClick={() => setIsBurgerActive(false)}
       className="text-white block text-xl md:text-3xl uppercase font-bold"
     >
-      <ScrollLink to={item.name} smooth duration={1000} onClick={() => setIsBurgerActive(false)}>
+      <Link to={item.to} onClick={() => setIsBurgerActive(false)}>
         {item.name}
-      </ScrollLink>
+      </Link>
     </li>
   ));
 

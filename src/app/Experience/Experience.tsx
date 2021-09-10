@@ -1,9 +1,11 @@
 import { faList, faLocationArrow } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Container } from '../../../components';
-import Heading, { HeadingPattern } from '../../../components/Heading/Heading';
+import { Container } from '../../components';
+import Heading, { HeadingPattern } from '../../components/Heading/Heading';
 import { experienceData } from './ExperienceData';
 import styled from 'styled-components';
+import { SlideLeftSlideRight } from '../../components/FramerMotion/Slide';
+import { motion } from 'framer-motion';
 
 const ExperienceItem = styled.div`
   margin-top: 2.5rem;
@@ -38,7 +40,7 @@ export default function Experience() {
 
   return (
     <Container id="experience" className="py-24">
-      <div className="w-full">
+      <motion.div {...SlideLeftSlideRight} className="w-full">
         <Heading
           heading={HeadingPattern.H2}
           className="text-center flex justify-center items-center w-full from-right"
@@ -46,7 +48,7 @@ export default function Experience() {
           work experience
         </Heading>
         <div className="mt-16">{experienceItems}</div>
-      </div>
+      </motion.div>
     </Container>
   );
 }

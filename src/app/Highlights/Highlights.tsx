@@ -1,7 +1,6 @@
-import { Container } from '../../../components';
+import { Container } from '../../components';
 import { HighlightsData } from './HighlightsData';
 import styled from 'styled-components';
-import Heading, { HeadingPattern } from '../../../components/Heading/Heading';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const HighlightItem = styled.div`

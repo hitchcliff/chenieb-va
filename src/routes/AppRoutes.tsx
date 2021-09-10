@@ -1,7 +1,7 @@
 import { AnimatePresence } from 'framer-motion';
 import { Route, Switch, useHistory, useLocation } from 'react-router-dom';
 import { RoutePattern } from './RoutePattern';
-import { Home, PageNotFound } from '../app/index';
+import { About, Experience, Highlights, Home, Introduction, PageNotFound } from '../app/index';
 import { useEffect } from 'react';
 import useRouteService from '../app/Hooks/useRouteService';
 
@@ -22,6 +22,10 @@ export default function AppRoutes() {
     <AnimatePresence exitBeforeEnter>
       <Switch location={location} key={location.pathname}>
         <Route exact path={[RoutePattern.Home, '/home']} component={Home} />
+        <Route exact path={RoutePattern.About} component={About} />
+        <Route exact path={RoutePattern.Introduction} component={Introduction} />
+        <Route exact path={RoutePattern.Highlights} component={Highlights} />
+        <Route exact path={RoutePattern.Experience} component={Experience} />
         <Route exact path="*" component={PageNotFound} />
       </Switch>
     </AnimatePresence>

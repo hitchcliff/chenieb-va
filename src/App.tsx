@@ -25,7 +25,6 @@ export default function App() {
       <Switch>
         <Route path="*" component={AppRoutes} />
       </Switch>
-      <Footer />
     </Router>
   );
 }

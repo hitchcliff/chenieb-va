@@ -1,5 +1,5 @@
-import { Container } from '../../../components';
-import Heading, { HeadingPattern } from '../../../components/Heading/Heading';
+import { Container } from '../../components';
+import Heading, { HeadingPattern } from '../../components/Heading/Heading';
 
 export default function Introduction() {
   return (

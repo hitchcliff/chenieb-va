@@ -2,6 +2,6 @@ import { RoutePattern } from '../../routes/RoutePattern';
 
 export interface MenuItemsTypes {
   name: string;
-  to?: RoutePattern;
+  to: RoutePattern;
   img?: string;
 }

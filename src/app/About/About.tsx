@@ -1,14 +1,15 @@
-import SHOWCASE_IMG from '../../../assets/images/1.jpg';
-import { Button, Container } from '../../../components';
-import Heading, { HeadingPattern } from '../../../components/Heading/Heading';
-import Socials from '../../../components/Socials/Socials';
-import { resumeLink } from '../../../constants';
+import { motion } from 'framer-motion';
+import SHOWCASE_IMG from '../../assets/images/1.jpg';
+import { Container } from '../../components';
+import { SlideLeftSlideRight } from '../../components/FramerMotion/Slide';
+import Heading, { HeadingPattern } from '../../components/Heading/Heading';
+import Socials from '../../components/Socials/Socials';
 
 export default function About() {
   return (
     <Container id="about" className="py-24 bg-gray-50 rounded-t-3xl">
-      <div className="flex flex-col md:flex-row">
-        <div className="w-full flex scale-up">
+      <motion.div {...SlideLeftSlideRight} className="flex flex-col md:flex-row">
+        <div className="w-3/4 flex scale-up">
           <img
             src={SHOWCASE_IMG}
             alt="chennie"
@@ -30,15 +31,12 @@ export default function About() {
             My interest is to gain experience to enhance my communication skills and to lend my
             strength to the company I’m working with.
           </p>
-          <a
-            href={resumeLink}
-            className="mt-10 font-times uppercase underline font-bold from-right"
-          >
-            view resume
+          <a href="#" className="mt-10 font-times uppercase underline font-bold from-right">
+            download my resume
           </a>
           <Socials className="py-3 mt-5 from-bottom" />
         </div>
-      </div>
+      </motion.div>
     </Container>
   );
 }
